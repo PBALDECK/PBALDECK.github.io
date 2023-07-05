@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title id="titre">Voyager 3 à la découverte du système solaire </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="js/vaisseau.js"></script>
+<script src="js/vitesselumière.js"></script>
+<script src="js/popup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.0/popup.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>
+            Et si Voyageur 3 partait du soleil ? <br><br><br>
+            Les échelles de distance sont respectées mais pas les échelles de taille <br><br><br>
+            Cliquez sur le vaisseau pour le déplacer de planète en planète à 100 fois la vitesse de la lumière <br><br><br>
+            Vous pouvez également cliquer sur le bouton en bas à droite pour découvrir l'extraordinaire vitesse de la lumière ...
+        </h1>
+    </div>
+<div id="espace">
+<div class="containerplanet">
+
+<div id="containersoleil">
+<svg version="1.1" id="soleil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10px" height="10px" viewbox="0 0 10 10">
+    <circle cx="5" cy="5" r="5"></circle>
+</svg>
+<div id="soleiltxt" class="labeltext">
+Soleil
+</div>
+</div>
+
+<div id="vaisseau"></div>
+
+<img src="img/Mercure.svg" id="mercure">
+<div id="merctxt" class="labeltext">
+<span id="merclabel">Mercure</span><br/>
+<button class="myButton" id="mercinfos">Infos</button>
+</div>
+
+<img src="img/Venus.svg" id="venus">
+<div id="venustxt" class="labeltext">
+<span id="venuslabel">Venus</span>
+</div>
+
+<img src="img/terre.svg" id="terre">
+<div id="terretxt" class="labeltext">
+<span id="terrelabel">Terre</span><br/>
+<div style="font-size:.3em; color:#737373">Coucou !</div>
+</div>
+
+<div id="lunetxt" class="labeltext">
+<span id="lunelabel">Lune</span><br/>
+</div>
+<img src="img/moon.svg" id="lune">
+
+<img src="img/Mars.svg" id="mars">
+<div id="marstxt" class="labeltext">
+<span id="marslabel">Mars</span>
+</div>
+
+<img src="img/Jupiter.svg" id="jupiter">
+<div id="jupitertxt" class="labeltext">
+<span id="jupiterlabel">Jupiter</span>
+</div>
+
+<img src="img/Saturn_01.svg.png" id="saturne"><br/>
+<div id="saturnetxt" class="labeltext">
+<span id="saturnelabel">Saturne</span>
+</div>
+
+<img src="img/uranus.svg" id="uranus">
+<div id="uranustxt" class="labeltext">
+<span id="uranuslabel">Uranus</span>
+</div>
+
+<img src="img/Neptune.svg" id="neptune">
+<div id="neptunetxt" class="labeltext">
+<span id="neptunelabel">Neptune</span>
+</div>
+
+<img src="img/pluto.svg" id="pluton">
+<div id="plutontxt" class="labeltext">
+<span id="plutonlabel">Pluton</span><span style="font-size:.25em"><br/></span>
+<span style="font-size:.25em; text-transform:none">(On ne t'oublie pas !)</span>
+</div>
+<ul class="nav">
+<li><a href="#soleil" class="sautsoleil"><img src="img/thesun-NASA.svg"></a></li>
+<li><a href="#mercure" class="sautplanète"><img src="img/Mercure.svg"></a></li>
+<li><a href="#venus" class="sautplanète"><img src="img/Venus.svg"></a></li>
+<li><a href="#terre" class="sautplanète"><img src="img/Terre.svg"></a></li>
+<li><a href="#mars" class="sautplanète"><img src="img/Mars.svg"></a></li>
+<li><a href="#jupiter" class="sautplanète"><img src="img/jupiter.svg"></a></li>
+<li><a href="#saturne" class="sautplanète"><img src="img/Saturn_01.svg.png"></a></li>
+<li><a href="#uranus" class="sautplanète"><img src="img/uranus.svg"></a></li>
+<li><a href="#neptune" class="sautplanète"><img src="img/neptune.svg"></a></li>
+<li><a href="#pluton" class="sautplanète"><img src="img/pluto.svg"></a></li>
+</ul>
+
+<div id="vitesselumière">
+    <a href="#" id="btnVitesseLumiere">
+      <img src="img/lumieres.png">
+      <span class="containerlumière"> </span>
+    </a>
+</div>
+</div>
+</div>
+</html>
