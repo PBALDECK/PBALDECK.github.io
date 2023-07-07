@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
   // Ajouter un gestionnaire d'événements au clic sur l'élément
-  const myElement = document.getElementById("mercinfos");
+  const myElement = document.getElementById("merclabel");
   myElement.addEventListener('click', function() {
     popup.show(); // Afficher le popup
   });

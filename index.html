@@ -6,19 +6,10 @@
 <title id="titre">Voyager 3 à la découverte du système solaire </title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="js/vaisseau.js"></script>
-<script src="js/vitesselumière.js"></script>
 <script src="js/popup.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.0/popup.min.js"></script>
 </head>
 <body>
-    <div>
-        <h1>
-            Et si Voyageur 3 partait du soleil à des vitesses incommensurables? <br><br><br>
-            Les échelles de distance sont respectées mais pas les échelles de taille <br><br><br>
-            Cliquez sur le vaisseau pour le déplacer de planète en planète à 100 fois la vitesse de la lumière <br><br><br>
-            Vous pouvez également cliquer sur le bouton en bas à droite pour découvrir l'extraordinaire vitesse de la lumière ...
-        </h1>
-    </div>
 <div id="espace">
 <div class="containerplanet">
 
@@ -36,7 +27,6 @@ Soleil
 <img src="img/Mercure.svg" id="mercure">
 <div id="merctxt" class="labeltext">
 <span id="merclabel">Mercure</span><br/>
-<button class="myButton" id="mercinfos">Infos</button>
 </div>
 
 <img src="img/Venus.svg" id="venus">
@@ -87,7 +77,7 @@ Soleil
 </div>
 </div>
 
-<div class=s"essai" style="left:8225px">Plutôt vide par ici.</div>
+<div class="essai" style="left:8225px">Plutôt vide par ici.</div>
 <div class="essai" style="left:13666px">Voici notre première planète...</div>
 <div class="essai" style="left:37100px">à mi-distance de la Terre</div>
 <div class="essai" style="left:48200px">Destination: Mars!</div>
@@ -109,12 +99,22 @@ Soleil
 </ul>
 
 <div id="vitesselumière">
-    <p> C'est la vitesse maximale autorisée. Sérieusement...</p>
-    <a href="#" id="btnVitesseLumiere">
-      <img src="img/lumieres.png">
-      <span class="containerlumière"> </span>
-    </a>
+  <div class="textContainer">
+    <p class="fadeInText">C'est la vitesse maximale autorisée. Sérieusement...</p>
+    <p class="fadeInText">Si vous avez un problème avec ça, adressez-vous à Mr. Einstein</p>
+    <p class="fadeInText">Si vous souhaitez accélérer, cliquez à nouveau sur le bouton</p>
+  </div>
+  <a href="#" id="btnVitesseLumiere">
+    <img src="img/lumieres.png">
+    <span class="containerlumière"> </span>
+  </a>
 </div>
+
+<div class="echelle-graduation">
+  <div class="graduation" style="left: 0;">0 km</div>
+  <div class="graduation" style="left: 1699774px;">1699774 km</div>
+</div>
+
 </div>
 </div>
 </html>
